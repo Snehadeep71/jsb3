@@ -1,0 +1,234 @@
+o*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------------contact us section 1 csec-01 css starts here-------------*/
+.csec-01{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: url(images/leather-bag-contact-page1.jpg) center center/cover;
+   
+    z-index: -1;
+    position: relative;
+}
+.csec-01content{
+    width: 100%;
+    max-width: 70%;
+    margin: auto auto;
+    align-items: left;
+    text-align: left;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    line-height: 2;
+    z-index: 1;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+/*----------------------contact us section 1 csec-01 responsive css starts here-------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .csec-01{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+    }
+    .csec-01content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        line-height: 2;
+       padding: 10px 20px;
+       box-sizing: border-box;
+    }
+}
+/*----------------------contact us section 1 csec-01 responsive css ends here-------------*/
+
+/*----------------------contact us section 1 csec-01 css ends here-------------*/
+/*----------------------contact us section 2 csec-02 css starts here-------------*/
+.csec-02{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+    background-color: #e0e2ee;
+}
+.csec-02 h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    color: #3c6d79;
+}
+.formcontent{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 90%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+.form1 form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    padding: 20px;
+    box-sizing: border-box;
+   
+
+}
+.form1{
+    width: 100%;
+    height: auto;
+    max-width: 48%;
+
+}
+.form1 input,textarea{
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 0;
+}
+.form1 form label{
+   line-height: 2.3;
+   color: #3c6d79;
+   font-weight: bold;
+}
+.formcontentright{
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.formcontentright h2{
+    color: #3c6d79;
+}
+.formcontentright span{
+    color: #3c6d79;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.formcontentright p a{
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+.social-media-links{
+    padding: 20px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-links i{
+    font-size: 40px;
+    
+}
+.social-media-links #fb{
+    color: #1877F2;
+    cursor: pointer;
+}
+.social-media-links #fb:hover,#ins:hover,#you:hover,#link:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.social-media-links #ins {
+    color: #d62976; /* Use Pink for the icon */
+    /* Add any additional styles as needed, such as font size or padding */
+}
+.social-media-links #you{
+    color: #FF0000;
+}
+.social-media-links #link{
+    color: #0077B5;
+}
+/*----------------------contact us responsive section 2  css starts here-------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .csec-02{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .formcontent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+
+    }
+    .form1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .btn1{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+/*----------------------contact us responsive section 2  css ends here-------------*/
+
+/*----------------------contact us section 2 csec-02 css ends here-------------*/
+/*----------------------contact us section 3 csec-03 css starts here-------------*/
+.csec-03{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+.csec-03 iframe{
+    width: 100%;
+    height:100%;
+    border: 0;
+}
+/*----------------------contact us responsive section 3  css starts here-------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+    .csec-03{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .csec-03 iframe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+}
+/*----------------------contact us responsive section 3  css ends here-------------*/
+/*----------------------contact us section 3 csec-03 css ends here-------------*/

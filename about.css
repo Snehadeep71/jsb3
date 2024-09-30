@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------------about sec-01 css starts here----------------*/
+.asec-01 {
+  width: 100%;
+  height: 100vh; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  position: relative; 
+  overflow: hidden; /* Prevent overflow */
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%; /* Ensure video covers the section */
+  width: auto; 
+  height: auto; 
+  z-index: 0;
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.asec-01 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1; /* Ensure text is above the background */
+}
+
+.overlay {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; /* Set z-index lower than content */
+}
+/*------------------about sec-01 css ends here----------------*/
+/*------------------about sec-02 css starts here----------------*/
+.asec-02 {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh; 
+  z-index: 1; 
+  position: relative; 
+  background: #fff; 
+}
+.asec-02 h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+.asec-02 h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    text-align: left;
+}
+.asec-02 p{
+    font-size: 1.1rem;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #717171;
+    line-height: 2;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+/*---------------------------section 2 responsive css starts here-----------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+  .asec-02{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+/*---------------------------section 2 responsive css ends here-----------*/
+/*--------------------------about section 02 responsive css starts here -----------------*/
+.asec-03{
+    text-align: center;
+    align-items: center;
+        
+}
+.asec-03 h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #37210f;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.asec-03 p{
+    line-height: 1.8;
+    padding: 20px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+
+}
+/*------------------about section 3 responsive css starts here--------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+  .asec-03{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+  .asec-03 h1{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+  }
+  .asec-03 p{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    box-sizing: border-box;
+    line-height: 2;
+  }
+}
+/*------------------about section 3 responsive css ends here--------------*/
+/*------------------about section 003 css starts here---------------------*/
+.asec-003{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 70vh; 
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+.asec-003contentleft{
+  width: 100%;
+  flex: 1 0 45%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  line-height: 3;
+}
+.asec-003contentleft h2{
+  color: #3c6d79;
+}
+.asec-003contentleft ul li {
+  display: flex; /* Flex on the list item */
+  align-items: center; /* Align icon and text vertically */
+  margin-bottom: 10px; /* Add space between list items */
+  line-height: 1.5;
+}
+.asec-003contentleft ul li i {
+  margin-right: 10px; /* Space between the icon and text */
+  display: inline-block;
+}
+.asec-003contentright{
+  width: 100%;
+  flex: 1 0 45%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.asec-003contentright img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  height: auto;
+}
+/*----------------about section 003 responsive css starts here----------------*/
+@media only screen and (min-width:200px) and (max-width:1336px){
+  .asec-003{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .asec-003contentleft {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  .asec-003contentleft h2{
+    flex-wrap: nowrap;
+    /* padding: 0; */
+    /* margin: 0; */
+    line-height: 1.5;
+  }
+  .asec-003contentleft ul li i{
+    text-align: left;
+    align-items: left;
+    flex-wrap: nowrap;
+  }
+}
+/*----------------about section 003 responsive css ends  here----------------*/
+/*------------------about section 003 css ends here---------------------*/
+/*------------------about sec-02 css ends here----------------*/
+/*----------------------testimonial section css starts here------------------*/
+.container2{
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    background-color: #ebebeb;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+  .container2 .contents-wraper{
+    width: 70%;
+    min-height: inherit;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .contents-wraper .testi-header h1{
+    position: relative;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #37210f;
+  }
+  .contents-wraper .testi-header h1::before{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background-color: #764c25;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  .contents-wraper .testRow{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  .testRow .testItem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testRow .testItem:not(.active){
+    top: 0;
+    left: -100%;
+  }
+  .testRow .testItem img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    outline: 2px solid #764c25;
+    outline-offset: 2px;
+  }
+  .testRow .testItem h3{
+    font-size: 30px;
+    font-style: italic;
+    padding: 7px;
+    color: #37210f;
+  }
+  .testItem h3 img{
+    width: 100%;
+    max-width: 5px;
+    height: 5px;
+  }
+  .testRow .testItem h4{
+    font-style: italic;
+    color: #764c25;
+  }
+  .testRow .testItem p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 10px;
+  }
+  .contents-wraper .indicators{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    cursor: pointer;
+  }
+  .contents-wraper .indicators .dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 3px;
+    border: 3px solid #aaa;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  .contents-wraper .indicators .active{
+    background-color: #37210f;
+  }
+  @keyframes next1{
+    from{
+      left: 0%;
+    }
+    to{
+      left: -100%;
+    }
+  }
+  @keyframes next2{
+    from{
+      left: 100%;
+    }
+    to{
+      left: 0%;
+    }
+  }
+  
+  @keyframes prev1{
+    from{
+      left: 0%;
+    }
+    to{
+      left: 100%;
+    }
+  }
+  @keyframes prev2{
+    from{
+      left: -100%;
+    }
+    to{
+      left: 0%;
+    }
+  }
+  
+  @media(max-width: 550px){
+    .container2 .contents-wraper{
+      width: 90%;
+    }
+    .contents-wraper .header h1{
+      font-size: 32px;
+    }
+    .testRow .testItem h3{
+      font-size: 26px;
+    }
+    .testRow .testItem p{
+      font-size: 16px;
+      letter-spacing: initial;
+      line-height: initial;
+    }
+  
+  }
+  /*----------------------testimonial section css ends here------------------*/
+  /*----------------------about section 4 css starts here------------------*/
+  .asec-04{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+  }
+  .asec-04 h2{
+    font-size: 2rem;
+    color: #3c6d79;
+    font-weight: bold;
+  }
+  .asec-04boxes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    gap: 20px;
+    border-radius: 20px;
+  }
+  .asec-04box1{
+    width: 100%;
+    max-width: 25%;
+    height: 100%;
+    max-height: 25%;
+  }
+  .asec-04box1 h3{
+    /* color: #f9ae65; */
+    color: #3c6d79;
+  }
+  .asec-04box1:hover{
+    cursor: pointer;
+    
+  }
+  .asec-04box1 img{
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .asec-04box1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+  /*----------------------about section 4 responsive css starts here--------------*/
+  @media only screen and (min-width:200px) and (max-width:1336px){
+    .asec-04{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      align-items: center;
+      }
+      .asec-04boxes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        gap: 20px;
+      }
+      .asec-04box1{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px 0px;
+        box-sizing: border-box;
+      }
+  }
+  /*----------------------about section 4 responsive css ends here--------------*/
+  /*----------------------about section 4 css ends here------------------*/
+  /*----------------------about section 5 css starts here------------------*/
+  .asec-05{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+
+  }
+  .asec-05 h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3c6d79;
+    font-weight: bold;
+  }
+  .asec-05boxes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+  }
+  .asec-05boxleft{
+    flex: 1 0 45%;
+    height: auto;
+    
+  }
+  .asec-05boxleft img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .asec-05boxleft h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: #f9ae65;
+    box-sizing: border-box;
+  }
+  .asec-05boxright{
+    text-align: left;
+    line-height: 2;
+
+  }
+  /*----------------------about section 5 responsive  css starts here------------------*/
+  @media only screen and (min-width:200px) and (max-width:1336px){
+    .asec-05{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      align-items: center;
+    }
+    .asec-05boxes{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
+      
+    }
+  }
+  /*----------------------about section 5 responsive  css ends here------------------*/
+  /*----------------------about section 5 css ends here------------------*/
+  
